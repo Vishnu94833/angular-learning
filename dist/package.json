@@ -1,15 +1,6 @@
 {
   "name": "angular-learning",
   "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "packagr": "ng-packagr -p ng-package.json"
-  },
   "private": false,
   "dependencies": {
     "@angular/animations": "~7.0.0",
@@ -24,7 +15,8 @@
     "core-js": "^2.5.4",
     "node-sass": "^4.13.0",
     "rxjs": "~6.3.3",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "tslib": "^1.9.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
@@ -47,5 +39,15 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.1.1"
-  }
+  },
+  "main": "bundles/angular-learning.umd.js",
+  "module": "fesm5/angular-learning.js",
+  "es2015": "fesm2015/angular-learning.js",
+  "esm5": "esm5/angular-learning.js",
+  "esm2015": "esm2015/angular-learning.js",
+  "fesm5": "fesm5/angular-learning.js",
+  "fesm2015": "fesm2015/angular-learning.js",
+  "typings": "angular-learning.d.ts",
+  "metadata": "angular-learning.metadata.json",
+  "sideEffects": false
 }

@@ -1,0 +1,5 @@
+<select class="form-control " [ngClass]="myClass" [(ngModel)]="SelectedDropdownItem"
+  (ngModelChange)="dropDownClick($event)">
+  <option [ngValue]="dropdown.value" *ngFor="let dropdown of dropdownList">
+    {{dropdown.label}}</option>
+</select>
