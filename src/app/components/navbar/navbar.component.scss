@@ -1,0 +1,29 @@
+@import '../../../assets/sass/media-queries';
+
+
+.navbar{
+    &-container{
+        padding: 10px;
+        background: #45abda;
+        display: grid;
+        justify-content: space-between;
+        align-items: baseline;
+
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+    }
+    &-logo{
+        cursor:pointer;
+    }
+    &-options{
+        display: flex;
+        list-style-type: none;
+        li{
+            padding:0px 25px;
+            a{
+                color:#FFFFFF;
+                cursor:pointer;
+            }
+        }
+    }
+    }

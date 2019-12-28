@@ -1,0 +1,22 @@
+<div class="css-grid-gallery">
+  <img 
+  [ngClass]="item.id === imageId ? 'active':''"
+  *ngFor="let item of galleryArray; let i = index" 
+  (click)="gallery(item.id)" src={{item.download_url}}
+  data-toggle="modal" 
+  data-target="#myModal" 
+  alt="">
+</div>
+
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-container">
+          <span class="modal-close" data-dismiss="modal">&times;</span>
+          <img src={{modalImage}} alt="">
+        </div>
+      </div>
+    </div>
+  </div>
