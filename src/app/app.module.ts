@@ -8,13 +8,19 @@ import { HeaderModule } from './modules/header/header.module';
 import { DropdownModule } from './modules/dropdown/dropdown.module';
 import { InputModule } from './modules/input/input.module';
 import { CarouselModule } from './modules/carousel/carousel.module';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    GalleryComponent
     ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     // HomeModule,
     DropdownModule,
     HeaderModule ,

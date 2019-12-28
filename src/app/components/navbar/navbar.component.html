@@ -1,0 +1,8 @@
+<div class="navbar-container">
+  <div class="navbar-logo">
+    <img src={{navbarOptions[0].logo}} alt="LOGO" height="50px">
+  </div>
+  <ul class="navbar-options">
+    <li *ngFor="let item of navbarOptions[1].navbarList" (click)="navbarEvent(item)"><a>{{item}}</a></li>
+  </ul>
+</div>  

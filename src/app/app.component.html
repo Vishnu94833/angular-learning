@@ -2,5 +2,11 @@
 <!-- <app-header>Such Header</app-header>
 <dropdown  [dropdownList]="arr" (dropdownEvent)="receiveDropdown($event)"></dropdown>
 <app-input [inputClass]="'form-control'" [inputType]="'text'"></app-input> -->
-<app-carousel></app-carousel>
+
+<!-- <app-navbar [navbarOptions]="navOptions" (navbarClickEvent)="navHandler($event)"></app-navbar> -->
+<div class="homepage-container scroll-behaviour">
+    <app-gallery [galleryArray]="galleryOptions" (galleryEvent)="galleryHandler($event)"></app-gallery>
+</div>
+
+
 <router-outlet></router-outlet>

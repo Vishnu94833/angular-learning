@@ -1,0 +1,27 @@
+.scroll-behaviour{
+    // height: calc(100%-100px);
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255); 
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: transparent; 
+        -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255); 
+    }
+}
+
+.homepage-container{
+    padding: 25px;
+}
